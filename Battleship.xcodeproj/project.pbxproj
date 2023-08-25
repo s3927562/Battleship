@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		144D70C92A98A558003EECD1 /* BattleshipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D70C82A98A558003EECD1 /* BattleshipApp.swift */; };
-		144D70CB2A98A558003EECD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D70CA2A98A558003EECD1 /* ContentView.swift */; };
+		144D70CB2A98A558003EECD1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144D70CA2A98A558003EECD1 /* MainView.swift */; };
 		144D70CD2A98A559003EECD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144D70CC2A98A559003EECD1 /* Assets.xcassets */; };
 		144D70D02A98A559003EECD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144D70CF2A98A559003EECD1 /* Preview Assets.xcassets */; };
+		14B19B732A98B71500E6F96A /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B19B722A98B71500E6F96A /* LeaderboardView.swift */; };
+		14B19B802A98D73500E6F96A /* easy.json in Resources */ = {isa = PBXBuildFile; fileRef = 14B19B7F2A98D73500E6F96A /* easy.json */; };
+		14B19B822A98D7B800E6F96A /* medium.json in Resources */ = {isa = PBXBuildFile; fileRef = 14B19B812A98D7B800E6F96A /* medium.json */; };
+		14B19B842A98D7D300E6F96A /* hard.json in Resources */ = {isa = PBXBuildFile; fileRef = 14B19B832A98D7D300E6F96A /* hard.json */; };
+		14B19B882A98DBBF00E6F96A /* HighScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B19B872A98DBBF00E6F96A /* HighScoreData.swift */; };
+		14B19B8A2A98EBD800E6F96A /* stats.json in Resources */ = {isa = PBXBuildFile; fileRef = 14B19B892A98EBD800E6F96A /* stats.json */; };
+		14B19B8C2A98EC4600E6F96A /* StatisticsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B19B8B2A98EC4600E6F96A /* StatisticsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		144D70C52A98A558003EECD1 /* Battleship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Battleship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		144D70C82A98A558003EECD1 /* BattleshipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleshipApp.swift; sourceTree = "<group>"; };
-		144D70CA2A98A558003EECD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		144D70CA2A98A558003EECD1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		144D70CC2A98A559003EECD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		144D70CF2A98A559003EECD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14B19B722A98B71500E6F96A /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		14B19B7F2A98D73500E6F96A /* easy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = easy.json; sourceTree = "<group>"; };
+		14B19B812A98D7B800E6F96A /* medium.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medium.json; sourceTree = "<group>"; };
+		14B19B832A98D7D300E6F96A /* hard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hard.json; sourceTree = "<group>"; };
+		14B19B872A98DBBF00E6F96A /* HighScoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreData.swift; sourceTree = "<group>"; };
+		14B19B892A98EBD800E6F96A /* stats.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stats.json; sourceTree = "<group>"; };
+		14B19B8B2A98EC4600E6F96A /* StatisticsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,9 @@
 		144D70C72A98A558003EECD1 /* Battleship */ = {
 			isa = PBXGroup;
 			children = (
+				14B19B7A2A98D6AA00E6F96A /* Models */,
+				14B19B742A98B71A00E6F96A /* Views */,
 				144D70C82A98A558003EECD1 /* BattleshipApp.swift */,
-				144D70CA2A98A558003EECD1 /* ContentView.swift */,
 				144D70CC2A98A559003EECD1 /* Assets.xcassets */,
 				144D70CE2A98A559003EECD1 /* Preview Content */,
 			);
@@ -65,6 +80,28 @@
 				144D70CF2A98A559003EECD1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14B19B742A98B71A00E6F96A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				144D70CA2A98A558003EECD1 /* MainView.swift */,
+				14B19B722A98B71500E6F96A /* LeaderboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14B19B7A2A98D6AA00E6F96A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14B19B7F2A98D73500E6F96A /* easy.json */,
+				14B19B812A98D7B800E6F96A /* medium.json */,
+				14B19B832A98D7D300E6F96A /* hard.json */,
+				14B19B872A98DBBF00E6F96A /* HighScoreData.swift */,
+				14B19B892A98EBD800E6F96A /* stats.json */,
+				14B19B8B2A98EC4600E6F96A /* StatisticsData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +162,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B19B8A2A98EBD800E6F96A /* stats.json in Resources */,
+				14B19B822A98D7B800E6F96A /* medium.json in Resources */,
+				14B19B842A98D7D300E6F96A /* hard.json in Resources */,
 				144D70D02A98A559003EECD1 /* Preview Assets.xcassets in Resources */,
 				144D70CD2A98A559003EECD1 /* Assets.xcassets in Resources */,
+				14B19B802A98D73500E6F96A /* easy.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				144D70CB2A98A558003EECD1 /* ContentView.swift in Sources */,
+				144D70CB2A98A558003EECD1 /* MainView.swift in Sources */,
 				144D70C92A98A558003EECD1 /* BattleshipApp.swift in Sources */,
+				14B19B882A98DBBF00E6F96A /* HighScoreData.swift in Sources */,
+				14B19B8C2A98EC4600E6F96A /* StatisticsData.swift in Sources */,
+				14B19B732A98B71500E6F96A /* LeaderboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
