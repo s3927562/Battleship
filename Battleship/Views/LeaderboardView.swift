@@ -41,6 +41,7 @@ struct LeaderboardView: View {
                 
                 Section {
                     LabeledContent("Games Total", value: String(difficultyStats.total))
+                    LabeledContent("Games Won", value: String(difficultyStats.win))
                 } header: {
                     Text("Statistics")
                 }
